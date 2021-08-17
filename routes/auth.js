@@ -33,4 +33,16 @@ router.post('/register', async function(req, res) {
    res.redirect('/login')
    
 })
+
+
+router.post('/resultexam' , async function(req,res) {
+    await student.create({
+
+    })
+    res.json( )
+})
+
+// router.post ('/showcourse' , async function(req,res) {
+//     await student.
+// })
 module.exports = router;
