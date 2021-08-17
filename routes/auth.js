@@ -30,7 +30,8 @@ router.post('/register', async function(req, res) {
        password: req.body.password,
        email: req.body.email
    })
-   res.redirect('/login')
+//    res.redirect('/login')
+res.json({result:'successful'})
    
 })
 
