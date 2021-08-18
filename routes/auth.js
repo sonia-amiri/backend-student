@@ -4,14 +4,14 @@ const index = require('./../index.js');
 const student = require('./../model/student.js');
 /* GET login. */
 router.post('/login', async function (req, res) {
-	console.log('login!')
-    res.json({name: "Hesam"})
+	console.log('login!', req.body)
+    
     // Mongodb code
-    let value = await student.findOne({email:req.body.email, name:req.body.username});
+    let value = await student.findOne({password:req.body.password, name:req.body.username});
     if (value) {
-        res.render('./../../student-ui/src/views/Student.vue')
-    }else {
-        res.render('./../../student-ui/src/views/RegisterStudent.vue')
+        res.json({redirect: "Student"})
+    } else {
+        res.json({redirect: "RegisterStudent"})
     }
 });
 
