@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const app = express(); 
 
-mongoose.connect( 'mongodb://online-test:secret@127.0.0.1:27017/online-test', {
+mongoose.connect( 'mongodb://online-test:secret@mongo:27017/online-test', {
             useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true
             // user:"",
             // pass:""
