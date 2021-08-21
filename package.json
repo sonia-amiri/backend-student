@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/sonia-amiri/backend-student#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "debug": "^4.3.2",
     "express": "^4.17.1",
     "mongoose": "^5.13.7",
     "mongoose-paginate-v2": "^1.4.2",
